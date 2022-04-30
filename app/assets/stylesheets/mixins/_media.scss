@@ -1,0 +1,7 @@
+@mixin media($query) {
+  @if $query == tableAndUp {
+    @media (min-width: 50rem) {
+      @content;
+    }
+  }
+}
