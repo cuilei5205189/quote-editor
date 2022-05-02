@@ -20,4 +20,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_29_142159) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "user_tbl", id: false, force: :cascade do |t|
+    t.string "name", limit: 20
+    t.date "signup_date"
+  end
+
 end
